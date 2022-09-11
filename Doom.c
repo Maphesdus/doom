@@ -7,12 +7,12 @@
 #include <stdio.h>
 #include <GL/glut.h> 
 
-#define resolution		1               		//0=160x120 1=360x240 4=640x480
-#define ScreenWidth		160 * resolution		//screen width
+#define resolution	1               		//0=160x120 1=360x240 4=640x480
+#define ScreenWidth	160 * resolution		//screen width
 #define ScreenHeight	120 * resolution		//screen height
 #define ScreenWidth2	(ScreenWidth / 2)		//half of screen width
 #define ScreenHeight2	(ScreenHeight / 2)		//half of screen height
-#define pixelScale		4 / resolution				//OpenGL pixel scale
+#define pixelScale	4 / resolution			//OpenGL pixel scale
 #define GL_ScreenWidth	(ScreenWidth * pixelScale)	//OpenGL window width
 #define GL_ScreenHeight	(ScreenHeight * pixelScale)	//OpenGL window height
 //------------------------------------------------------------------------------
@@ -23,9 +23,9 @@ typedef struct
 
 typedef struct 
 {
- int w, s, a, d;           		//move up, down, left, right
+ int w, s, a, d;           	//move up, down, left, right
  int strafe_left, strafe_right;	//strafe left, right 
- int move;						//move up, down, look up, down
+ int move;			//move up, down, look up, down
 }keys; keys Key;
 
 typedef struct
@@ -37,8 +37,8 @@ typedef struct
 typedef struct
 {
 	int x, y, z;		// Player position. Z is up
-	int angle;			// Player angle of rotation left right
-	int look;			// Variable to look up and down
+	int angle;		// Player angle of rotation left right
+	int look;		// Variable to look up and down
 } player; player Player;
 
 //------------------------------------------------------------------------------
